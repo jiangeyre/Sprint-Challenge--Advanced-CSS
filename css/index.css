@@ -1,3 +1,9 @@
+.padding-top {
+  padding: 1%;
+}
+.centering {
+  text-align: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -169,8 +175,14 @@ p {
   align-content: center;
   background-color: #F6F6F6;
 }
+@media (max-width: 500px) {
+  .nav-container {
+    max-width: 100%;
+    padding-top: 2%;
+  }
+}
 .nav-container .nav-logo {
-  padding-top: 1%;
+  padding: 1%;
   font-size: 3.2rem;
 }
 .nav-container .nav-bar {
@@ -183,6 +195,12 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .nav-container .nav-bar nav {
+    width: 80%;
+    padding-bottom: 2%;
+  }
 }
 .nav-container .nav-bar nav a {
   text-decoration: none;
@@ -200,6 +218,14 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .intro img {
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .home .intro img {
+    border-radius: 5px;
+  }
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -210,6 +236,21 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images {
+    display: flex;
+    justify-content: center;
+  }
+  .home .space-images .blast {
+    width: 90%;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
 }
 .home .space-images img {
   width: 28%;

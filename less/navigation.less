@@ -3,22 +3,34 @@
 //styles for navigation
 .nav-container{
     width: 100%;
-    text-align: center;
+    .centering();
     .custom-layout(column, center, center);
     background-color: @nav-bg;
+
+    @media @mobile {
+        max-width: 100%;
+        padding-top: 2%;
+    }
+
     .nav-logo{
-        padding-top: 1%;
+        .padding-top();
         font-size: 3.2rem;
     }
     .nav-bar{
         display: flex;
         justify-content: center;
         nav{
-            padding: 1%;
+            .padding-top();
             width: 30%;
             display: flex;
             justify-content: space-between;
             align-items: center;
+
+            @media @mobile {
+                width: 80%;
+                padding-bottom: 2%;
+            }
+
             a{
                 text-decoration: none;
                 color: @ebony-clay;

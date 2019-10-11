@@ -3,7 +3,13 @@
 .home {
 
   .intro {
+    img{
+      width: 100%;
 
+      @media @mobile {
+        border-radius: 5px;
+      }
+    }
     h2 {
       padding: 15px;
     }
@@ -18,6 +24,20 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
+    @media @mobile {
+      display: flex;
+      justify-content: center;
+      .blast{
+        width: 90%;
+      }
+      .sky{
+        display: none;
+      }
+      .launch{
+        display: none;
+      }
+    }
 
     img {
       width: 28%;
