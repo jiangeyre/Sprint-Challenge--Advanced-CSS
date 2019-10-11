@@ -66,8 +66,21 @@
     display: flex;
     justify-content: center;
 
+    @media @mobile {
+      margin-top: 20px;
+      padding:30px 10px;
+      .custom-layout(column-reverse, center, center);
+      align-content: center;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @mobile {
+        width: 100%;
+        padding: 12px;
+        padding-top: 30px;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -79,8 +92,21 @@
 
       .btn {
         margin-left: -3%;
+
+        @media @mobile {
+          margin-left: -3.5%;
+        }
+
         button{
           .custom-butt(@bg-color: #22283A, @width: 100px, @txt-color: white);
+          font-family: 'Ubuntu', sans-serif;
+
+          @media @mobile {
+            .custom-butt(@bg-color: #22283A, @width: 467.5px, @txt-color: white);
+            height: 70px;
+            border-radius: 5px;
+          }
+
         }
       }
     }
@@ -88,6 +114,11 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @mobile {
+        width: 100%;
+        margin-left: 0;
+      }
       
       img {
         width: 100%;
