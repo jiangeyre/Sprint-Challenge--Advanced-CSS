@@ -33,14 +33,19 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+    Responsive design is much more fluid and adapts to the size of the screen no matter what target device. Responsive design uses media queries based on the targe device sizes. Adaptive design uses static layouts based on breakpoints which don't respond once they're initially loaded. Adaptive works to detect the screen size and load the appropriate layout for it.
 
 2. Describe what it means to be mobile first vs desktop first.
+    Mobile-first is a design strategy, while desktop results from a technical / responsive approach. When a busines develops its website, the design is often based on the assumption that visitors will visit on the desktop computer. Mobile-first would be to design with the idea that visitors will visit on their phones.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+    Setting font-size to 62.5% means that 0.625 x the default of 16px = 10px. This makes rem (relative to the root html element) easier for math calculations for font size. (I.E. 1.6rem = 16 px; 2.5rem = 25 px and so on)
 
 4. How would you describe preprocessing to someone new to CSS?
+    A CSS preprocessor is a program that lets you generate CSS from the preprocessor's own unique syntax. CSS preporcessors will add in features that don't exist in pure CSS - mixin, nesting, inheritance selector, escaping, etc.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+    I love nesting. The OCD in me loves putting things in their containers and seeing where they belong (I do have to pay attention to not do more than 4 layers.) I don't know if their is a concept that gives me much trouble. I just want to practice this more and perfect my codes and media query adjustments.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
